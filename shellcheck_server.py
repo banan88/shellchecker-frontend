@@ -49,7 +49,7 @@ class DefaultHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
         self.wfile.close()
 
 
-port = 8000
+port = 8000#TODO should be passed via args
 httpd = SocketServer.TCPServer(("", port), DefaultHandler)
 
 print 'serving on %s...' % (port)
